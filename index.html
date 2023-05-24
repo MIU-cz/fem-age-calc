@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main class="conteiner">
+    <div class="card-conteiner">
 
-  Day
-  DD
+      <!-- ### inputs  -->
+      <div class="card-inputs">
+        <div class="day">
+          <span class="input-description">Day</span>
+          <div class="input-col">DD</div>
+        </div>
+        <div class="month">
+          <span class="input-description">Month</span>
+          <div class="input-col">MM</div>
+        </div>
+        <div class="year">
+          <span class="input-description">Year</span>
+          <div class="input-col">YYYY</div>
+        </div>
+      </div>
 
-  Month
-  MM
+      <div class="arrow"></div>
+      <!-- ### results -->
+      <div class="card-results">
+        <div class="result-years">
+          <span class="result-output">--</span>
+          <span class="description">years</span>
+        </div>
+        <div class="result-month">
+          <span class="result-output">--</span>
+          <span class="description">months</span>
+        </div>
+        <div class="result-days">
+          <span class="result-output">--</span>
+          <span class="description">days</span>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://sites.google.com/view/zivotopis-miu/kdo-jsem" target="_blank">MIU</a>.
+  </footer>
 </body>
+
 </html>
