@@ -16,37 +16,50 @@
     <div class="card-conteiner">
 
       <!-- ### inputs  -->
-      <div class="card-inputs">
-        <div class="day">
-          <span class="input-description">Day</span>
-          <div class="input-col">DD</div>
-        </div>
-        <div class="month">
-          <span class="input-description">Month</span>
-          <div class="input-col">MM</div>
-        </div>
-        <div class="year">
-          <span class="input-description">Year</span>
-          <div class="input-col">YYYY</div>
-        </div>
-      </div>
 
-      <div class="arrow"></div>
+      <form action="">
+        <div class="card-inputs">
+          <div class="items days">
+            <label for="day" class="input-description">Day</label>
+            <input type="text" id="in-day" class="input-col" placeholder="DD">
+          </div>
+          <div class="items months">
+            <label for="month" class="input-description">Month</label>
+            <input type="text" id="in-month" class="input-col" placeholder="MM">
+          </div>
+          <div class="items years">
+            <label for="year" class="input-description">Year</label>
+            <input type="text" id="in-year" class="input-col" placeholder="YYYY">
+          </div>
+        </div>
+        <div class="figure">
+          <button type="submit" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44" class="arrow">
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </form>
+
+
       <!-- ### results -->
       <div class="card-results">
-        <div class="result-years">
-          <span class="result-output">--</span>
+        <div class="result-output">
+          <span class="result" id="out-years">--</span>
           <span class="description">years</span>
         </div>
-        <div class="result-month">
-          <span class="result-output">--</span>
+        <div class="result-output">
+          <span class="result" id="out-months">--</span>
           <span class="description">months</span>
         </div>
-        <div class="result-days">
-          <span class="result-output">--</span>
+        <div class="result-output">
+          <span class="result" id="out-days">--</span>
           <span class="description">days</span>
         </div>
       </div>
+
     </div>
   </main>
 
