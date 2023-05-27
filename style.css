@@ -47,7 +47,7 @@ body {
 .card-conteiner {
 	width: 830px;
 	height: 650px;
-	position: relative;
+	/* position: relative; */
 	background-color: var(--White);
 	border-radius: 25px 25px 200px 25px;
 	padding: 50px;
@@ -56,6 +56,7 @@ body {
 /* -- ### inputs  -- */
 .card-inputs {
 	width: 635px;
+	position: relative;
 	display: flex;
 	justify-content: flex-start;
 	border-bottom: 1px solid var(--Light-grey);
@@ -72,6 +73,8 @@ body {
 .input-description {
 	display: block;
 	margin-bottom: 8px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 .input-col {
@@ -96,8 +99,8 @@ body {
 /* -- ### arrow button -- */
 .figure {
 	position: absolute;
-	top: 125px;
-	right: 85px;
+	top: 80px;
+	right: -145px;
 }
 
 .btn {
@@ -164,4 +167,51 @@ body {
 .error {
 	color: var(--Light-red);
 	border-color: var(--Light-red);
+}
+
+/* media screen styles */
+
+@media screen and (max-width: 992px) {
+	.card-conteiner {
+		width: 80%;
+		height: auto;
+	}
+
+	.card-inputs {
+		width: 100%;
+		justify-content: space-between;
+		padding-bottom: 110px;
+		margin-bottom: 110px;
+	}
+
+	.items {
+		width: 30%;
+		margin: auto;
+		font-size: 3vw;
+	}
+
+	.input-col {
+		width: 100%;
+		font-size: 5vw;
+	}
+
+	.figure {
+		top: 75%;
+		right: 50%;
+		transform: translate(50%, -5%);
+	}
+
+	.btn {
+		width: 110px;
+		height: 110px;
+	}
+
+	.card-results {
+		width: 100%;
+	}
+
+	.result-output {
+		width: 100%;
+		font-size: 12vw;
+	}
 }

@@ -36,7 +36,7 @@ form.addEventListener('submit', function (event) {
     chekingYear(year, currentYear);
     chekingValidDate(day, month, year);
 
-    console.log(chekingValidDate(day, month, year));
+    // console.log(chekingValidDate(day, month, year));
 
     // calculatings
     let years = currentYear - year;
