@@ -1,11 +1,3 @@
-// 1. получить данные формы
-// 2. проверить правильность ввода
-//     - обязательное поле
-//     - правильные данные в диапазоне
-//         - текст + рамка красный
-//         - сообщение об ошибке красным
-// 3. вывести результат
-
 // ### Users should be able to:
 // - View an age in years, months, and days after submitting a valid date through the form
 // - Receive validation errors if:
