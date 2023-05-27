@@ -36,25 +36,25 @@ form.addEventListener('submit', function (event) {
     chekingYear(year, currentYear);
     chekingValidDate(day, month, year);
 
-    // // calculatings
-    // let years = currentYear - year;
-    // let months = currentMonth - month;
-    // let days = currentDay - day;
+    // calculatings
+    let years = currentYear - year;
+    let months = currentMonth - month;
+    let days = currentDay - day;
 
-    // if (days < 0) {
-    //     months--;
-    //     days = currentDay - 1;
-    // }
+    if (days < 0) {
+        months--;
+        days = currentDay - 1;
+    }
 
-    // if (months < 0) {
-    //     years--;
-    //     months += 12;
-    // }
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
 
-    // // output results
-    // document.getElementById('out-years').innerHTML = years;
-    // document.getElementById('out-months').innerHTML = months;
-    // document.getElementById('out-days').innerHTML = days;
+    // output results
+    document.getElementById('out-years').innerHTML = years;
+    document.getElementById('out-months').innerHTML = months;
+    document.getElementById('out-days').innerHTML = days;
 
 })
 
