@@ -150,3 +150,18 @@ body {
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
+
+/* cheking data styles */
+.varning {
+	margin-top: 8px;
+	font-size: 12px;
+}
+
+.hidden {
+	display: none;
+}
+
+.error {
+	color: var(--Light-red);
+	border-color: var(--Light-red);
+}
