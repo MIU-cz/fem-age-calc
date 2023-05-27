@@ -36,6 +36,8 @@ form.addEventListener('submit', function (event) {
     chekingYear(year, currentYear);
     chekingValidDate(day, month, year);
 
+    console.log(chekingValidDate(day, month, year));
+
     // calculatings
     let years = currentYear - year;
     let months = currentMonth - month;
@@ -52,10 +54,16 @@ form.addEventListener('submit', function (event) {
     }
 
     // output results
-    document.getElementById('out-years').innerHTML = years;
-    document.getElementById('out-months').innerHTML = months;
-    document.getElementById('out-days').innerHTML = days;
-
+    if (chekingValidDate(day, month, year)) {
+        document.getElementById('out-years').innerHTML = years;
+        document.getElementById('out-months').innerHTML = months;
+        document.getElementById('out-days').innerHTML = days;
+    }
+    else {
+        document.getElementById('out-years').innerHTML = '--';
+        document.getElementById('out-months').innerHTML = '--';
+        document.getElementById('out-days').innerHTML = '--';
+    }
 })
 
 // varnings messages
@@ -146,8 +154,12 @@ function chekingValidDate(day, month, year) {
         validDate.getMonth() + 1 !== month ||
         validDate.getDate() !== day) {
         addError(errorDate);
+        return false;
     }
-    else { removeError(); }
+    else {
+        removeError();
+        return true;
+    }
 
     // console.log(validDate);
 }
